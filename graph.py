@@ -14,7 +14,6 @@ class Graph:
 
         if start == end:
             return [path]
-
         if start not in self.graph_dict:
             return []
 
