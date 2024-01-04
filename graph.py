@@ -25,16 +25,13 @@ class Graph:
                     paths.append(p)
 
         return paths
-
     def get_shortest_path(self, start, end, path=[]):
         path = path + [start]
 
         if start == end:
             return path
-
         if start not in self.graph_dict:
             return None
-
         shortest_path = None
         for node in self.graph_dict[start]:
             if node not in path:
@@ -76,7 +73,7 @@ if __name__ == '__main__':
     print(f"All paths between: {start} and {end}: ",route_graph.get_paths(start,end))
     print(f"Shortest path between {start} and {end}: ", route_graph.get_shortest_path(start,end))
 
-    start = "Dubai"
+    start = "Mumbai"
     end = "New York"
 
     print(f"All paths between: {start} and {end}: ",route_graph.get_paths(start,end))
