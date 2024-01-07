@@ -63,8 +63,7 @@ class LinkedList:
                 break
             iter = iter.next
             count += 1
-
-
+            
     def printing(self):
         if self.head is None:
             print("linked list is empty nigga")
